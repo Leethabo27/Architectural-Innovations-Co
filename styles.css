@@ -258,7 +258,7 @@ html {
 .welcome-section {
     position: relative;
     width: 100%;
-    padding: 80px 0;
+    padding: 60px 0;
     background: url('aic.png') no-repeat center right;
     background-size: cover;
 }
@@ -266,7 +266,7 @@ html {
 .welcome-content {
     background: rgba(255, 255, 255, 0.8);
     /* Light background for readability */
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
 }
 
