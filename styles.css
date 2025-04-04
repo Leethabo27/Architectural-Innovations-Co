@@ -1,0 +1,883 @@
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+ /* Header */
+ .header {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     padding: 20px;
+ }
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between image and text */
+}
+
+/* Logo Image */
+.logo-img {
+    width: 40px;
+    /* Adjust size */
+    height: 50px;
+}
+ .logo {
+     font-size: 25px;
+     font-weight: 300;
+     text-transform: unset;
+ }
+
+ .tagline {
+     font-size: 14px;
+    
+     color: rgb(0, 94, 47);
+     margin-top: -5px;
+ }
+
+ .download-section {
+     text-align: center;
+     padding: 50px 20px;
+     background-color: #f4f4f4;
+ }
+
+ .download-section h2 {
+     font-size: 24px;
+     margin-bottom: 10px;
+ }
+
+ .download-section p {
+     font-size: 16px;
+     color: #555;
+     margin-bottom: 20px;
+ }
+
+ .download-btn {
+     display: inline-block;
+     background-color: #ffc107;
+     color: rgb(255, 255, 255);
+     font-size: 16px;
+     padding: 15px 30px;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 5px;
+     transition: 0.3s ease-in-out;
+ }
+
+ .download-btn:hover {
+     background-color: #ffb300;
+ }
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.nav a:hover {
+    color: #f8b400;
+}
+
+.highlight {
+    background: #f8b400;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+ /* Hero Section */
+ .hero {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+ }
+
+ .hero-video {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+
+ .hero-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     /* Transparent dark overlay */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .hero-content {
+     text-align: center;
+     color: #fff;
+     max-width: 90%;
+     padding: 20px;
+ }
+
+ .hero-content h1 {
+     font-size: 3rem;
+     margin-bottom: 20px;
+ }
+
+ .hero-content p {
+     font-size: 1.2rem;
+     margin-bottom: 20px;
+ }
+
+ .cta-btn {
+     font-size: 1.1rem;
+     padding: 12px 30px;
+     background-color: #006627;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 5px;
+     transition: background-color 0.3s;
+ }
+
+ .cta-btn:hover {
+     background-color: #003809;
+ }
+
+
+
+/* Loading Screen with Dots Animation */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 8, 3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 1000;
+}
+
+#loading-dots {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Pop-up for Terms & Conditions */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.popup-content button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background: grey;
+}
+
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1100px;
+    align-items: center;
+    gap: 40px;
+}
+.welcome-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    background: url('aic.png') no-repeat center right;
+    background-size: cover;
+}
+
+.welcome-content {
+    background: rgba(255, 255, 255, 0.8);
+    /* Light background for readability */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.welcome-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.welcome-content h1 span {
+    color:#005a36 ;
+    /* Adjust to match your theme */
+}
+
+.welcome-content p {
+    font-size: 18px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.goal {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.talk-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #002b1a;
+    /* Adjust color to match your theme */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.talk-btn:hover {
+    background: #6f6f1e;
+    /* Darker on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .welcome-content {
+        text-align: center;
+    }
+
+    .welcome-content h1,
+    .welcome-content p {
+        text-align: center;
+    }
+}
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+}
+
+/* Project Item */
+.project-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Project Image */
+.project-img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+   
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Default layout (for large screens) */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Individual stat box */
+.stat-box {
+    background: #5c5c5c;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+}
+
+/* Style for the heading in the stats section */
+.stats-section h2 {
+    text-align: center;
+    /* Centers text */
+    font-size: 2.5rem;
+    /* Bigger for large screens */
+    font-weight: 700;
+    /* Bold and strong */
+    color: #ffffff;
+    /* Dark gray for readability */
+    margin-bottom: 20px;
+    /* Adds space below */
+    line-height: 1.3;
+    /* Improves readability */
+    width: 100%;
+    /* Ensures it spans full width */
+}
+
+/* Make stats vertical on smaller screens */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 80%;
+        /* Adjusts width for mobile */
+    }
+
+    /* Responsive heading for smaller screens */
+    .stats-section h2 {
+        font-size: 1.8rem;
+        /* Smaller for mobile */
+        padding: 0 10px;
+        /* Adds padding */
+    }
+}
+
+/* Make it responsive for tablets */
+@media (max-width: 1024px) {
+    .stats-section h2 {
+        font-size: 2rem;
+        /* Slightly smaller on tablets */
+    }
+}
+/* General Section Styling */
+.partners {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.partners h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+
+
+
+
+.process-section {
+    background: #9e9e9e;
+    /* Dark navy blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.process-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    /* Gold */
+}
+
+.process-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.process-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Individual Step */
+.process-step {
+    background: #232324;
+    /* Dark blue */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.process-step h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #f8b400;
+}
+
+.process-step p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Number Circles */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    /* Gold */
+    color: #1a1a2e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+/* Animation */
+.process-step.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* 📌 Responsive: Stack vertically on smaller screens */
+@media (max-width: 768px) {
+    .process-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .process-step {
+        width: 90%;
+    }
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Overlay Text */
+.project-overlay h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Show overlay on hover */
+.project-img:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Service Boxes */
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}
+
+.get-in-touch {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.get-in-touch h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.get-in-touch p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #01581e;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #005521;
+}
+/* Chatbot Button */
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Chatbot Container */
+#chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Show chatbot when active */
+#chatbot-container.show {
+    display: flex;
+}
+ /* Ensure controls are positioned properly */
+ .carousel-control-prev,
+ .carousel-control-next {
+     width: 10%;
+     /* Adjust width for better mobile usability */
+ }
+
+ /* Customize icons for visibility */
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Darker icons for visibility */
+     border-radius: 50%;
+     padding: 10px;
+ }
+
+ /* Mobile optimizations */
+ @media (max-width: 768px) {
+
+     .carousel-control-prev,
+     .carousel-control-next {
+         width: 15%;
+         /* Increase tap area for touch devices */
+     }
+ }
+
+/* Chat Header */
+#chatbot-header {
+    background: #004b3b;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Chat Messages */
+#chat-messages {
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Chat Input */
+#chat-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Chat Send Button */
+#send-btn {
+    background: #333;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Chat Message Styles */
+.chat-message {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.user {
+    background: #ddd;
+    align-self: flex-end;
+}
+
+.bot {
+    background: #333;
+    color: white;
+}
+
+
+.coming-soon {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.coming-soon h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #006627;
+    /* Your brand color */
+}
+
+.coming-soon p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: #ffd700;
+    /* Yellow icons */
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .socials a:hover {
+    text-decoration: underline;
+}

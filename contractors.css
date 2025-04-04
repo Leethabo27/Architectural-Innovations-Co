@@ -1,0 +1,303 @@
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between image and text */
+}
+
+/* Logo Image */
+.logo-img {
+    width: 40px;
+    /* Adjust size */
+    height: 50px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: unset;
+}
+
+.tagline {
+    font-size: 14px;
+    color: rgb(0, 94, 47);
+    margin-top: -5px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.nav a:hover {
+    color: #f8b400;
+}
+.contractors-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.contractors-content {
+    width: 50%;
+}
+
+.contractors-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #006627;
+    /* Brand color */
+}
+
+.contractors-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.contractors-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contractors-content ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e6c200;
+}
+
+.contractors-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.contractors-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contractors-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contractors-content,
+    .contractors-image {
+        width: 100%;
+    }
+
+    .contractors-image img {
+        max-width: 80%;
+    }
+}
+.interaction-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.interaction-section h2 {
+    font-size: 2.5rem;
+    color: #006627;
+    margin-bottom: 20px;
+}
+
+.interaction-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.interaction-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.interaction-step {
+    width: 22%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.interaction-step i {
+    font-size: 40px;
+    color: #006627;
+    margin-bottom: 10px;
+}
+
+.interaction-step h3 {
+    font-size: 1.5rem;
+    color: #006627;
+    margin-bottom: 10px;
+}
+
+.interaction-step p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e6c200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interaction-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interaction-step {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+.coming-soon {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.coming-soon h2 {
+    font-size: 2.5rem;
+    color: #006627;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature-box {
+    width: 22%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #006627;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #006627;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.launch-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

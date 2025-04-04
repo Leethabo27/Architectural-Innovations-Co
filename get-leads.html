@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Leads - Architectural Innovations Co</title>
+    <!-- Add Bootstrap CDN -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="get-leads.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Architectural Innovations Co</div>
+      <div class="tagline">for architects, engineers & contractors</div>
+    </header>
+
+    <nav class="nav">
+      <a href="architect.html">Architect</a>
+      <a href="engineers.html">Structural Engineers</a>
+      <a href="suveryors.html">Quantity Surveyors</a>
+      <a href="contractors.html">Building Contractors</a>
+      <a href="index.html" class="highlight">Home</a>
+    </nav>
+    <!-- Introduction Section -->
+    <section
+      class="intro-section text-center py-5 text-white"
+      style="
+        background-image: url('aic.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="overlay"></div>
+      <h2 class="display-4 text-warning">
+        Generate Quality Leads for Your Business
+      </h2>
+      <p class="lead">
+        We specialize in lead generation for <strong>Architects</strong>,
+        <strong>Structural Engineers</strong>,
+        <strong>Quantity Surveyors</strong>, and
+        <strong>Building Contractors</strong>.
+      </p>
+      <p>
+        <strong>New interactive features coming soon!</strong> Stay tuned for
+        AI-powered matching and real-time project leads.
+      </p>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section class="lead-form my-5">
+      <h2 class="text-center">Sign Up for Leads</h2>
+      <p class="text-center">
+        Fill out the form below, and we'll connect you with potential clients.
+      </p>
+
+      <form
+        action="https://formspree.io/f/xjkyrodk"
+        method="POST"
+        class="container"
+      >
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="profession">Your Profession</label>
+          <select
+            id="profession"
+            name="profession"
+            class="form-control"
+            required
+          >
+            <option value="Architect">Architect</option>
+            <option value="Structural Engineer">Structural Engineer</option>
+            <option value="Quantity Surveyor">Quantity Surveyor</option>
+            <option value="Building Contractor">Building Contractor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell Us About Your Services</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="form-control"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark btn-block">Submit</button>
+      </form>
+    </section>
+
+    <!-- Chatbot Button -->
+    <div id="chatbot-toggle" class="btn btn-info fixed-bottom mb-4 mr-4">
+      How can we help you?
+    </div>
+
+    <!-- Chatbot Container -->
+    <div
+      id="chatbot-container"
+      class="d-none fixed-bottom mb-4 mr-4 bg-white p-3 shadow-lg rounded"
+    >
+      <div id="chatbot-header" class="bg-dark text-white text-center py-2">
+        AI Support
+      </div>
+      <div
+        id="chat-messages"
+        class="p-2"
+        style="max-height: 250px; overflow-y: auto"
+      ></div>
+      <input
+        type="text"
+        id="chat-input"
+        class="form-control"
+        placeholder="Type your message..."
+      />
+      <button id="send-btn" class="btn btn-dark btn-block mt-2">Send</button>
+    </div>
+
+    <footer class="footer text-center bg-dark text-white py-4">
+      <p>&copy; 2025 Architectural Innovations Co. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="chatbot.js"></script>
+    <script>
+      // JavaScript for the chatbot toggle
+      document
+        .getElementById("chatbot-toggle")
+        .addEventListener("click", function () {
+          document
+            .getElementById("chatbot-container")
+            .classList.toggle("d-none");
+        });
+    </script>
+  </body>
+</html>

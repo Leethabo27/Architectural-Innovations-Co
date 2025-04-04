@@ -1,0 +1,350 @@
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between image and text */
+}
+
+/* Logo Image */
+.logo-img {
+    width: 40px;
+    /* Adjust size */
+    height: 50px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: unset;
+}
+
+.tagline {
+    font-size: 14px;
+    color: rgb(0, 94, 47);
+    margin-top: -5px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.nav a:hover {
+    color: #f8b400;
+}
+
+.highlight {
+    background: #f8b400;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.interactive-features {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.interactive-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #006627;
+    /* Brand color */
+}
+
+.interactive-features p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+    border-top: 5px solid #006627;
+    /* Brand highlight */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #ffd700;
+    /* Yellow icons */
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #006627;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.feature-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-card ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e6c200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Quantity Surveyors Section */
+.surveyors-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    color: #333;
+}
+
+.surveyors-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.surveyors-image {
+    width: 45%;
+}
+
+.surveyors-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.surveyors-info {
+    width: 50%;
+}
+
+.surveyors-info h2 {
+    font-size: 2.2rem;
+    color: #006627;
+    margin-bottom: 15px;
+}
+
+.surveyors-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.surveyors-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.feature i {
+    font-size: 24px;
+    color: #006627;
+    margin-right: 10px;
+}
+
+/* Coming Soon Interactive Features */
+.surveyors-coming-soon {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    color: #333;
+}
+
+.surveyors-coming-soon h2 {
+    font-size: 2.5rem;
+    color: #006627;
+    margin-bottom: 20px;
+}
+
+.surveyors-coming-soon p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature-box {
+    width: 22%;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #006627;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #006627;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.launch-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .surveyors-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .surveyors-image {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .surveyors-info {
+        width: 90%;
+    }
+
+    .surveyors-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .socials a:hover {
+    text-decoration: underline;
+}
