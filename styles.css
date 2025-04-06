@@ -679,12 +679,6 @@ h2 {
   text-decoration: underline;
 }
 
-/* RESPONSIVENESS */
-@media (max-width: 768px) {
-  .get-in-touch .container {
-    padding: 1.5rem;
-  }
-
   .get-in-touch h2 {
     font-size: 1.5rem;
   }
@@ -693,9 +687,6 @@ h2 {
   .contact-details {
     font-size: 1rem;
   }
-
-
-
 
 /* Chatbot Button */
 #chatbot-toggle {
