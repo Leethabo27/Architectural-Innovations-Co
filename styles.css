@@ -882,7 +882,103 @@ h2 {
   .feature-box h3 {
     font-size: 1.1rem;
   }
+.partner-carousel {
+    background-color: #f9f9f9;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #000;
+}
 
+.partner-carousel-header h2 {
+    font-size: 2.5rem;
+    color: #01581e;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.partner-carousel-header p {
+    color: #333;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.partner-carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.partner-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.partner-carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+}
+
+.partner-carousel-slide img {
+    max-width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.partner-carousel-caption {
+    font-style: italic;
+    color: #000;
+    background-color: #ffeb3b;
+    padding: 1.5rem;
+    border-left: 4px solid #01581e;
+    border-radius: 0.5rem;
+    max-width: 85%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.carousel-navigation {
+    margin-top: 2rem;
+}
+
+.partner-carousel-btn {
+    background-color: #01581e;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.partner-carousel-btn:hover {
+    background-color: #013f15;
+}
+
+.partner-carousel-btn.prev {
+    margin-right: 1rem;
+}
+
+.partner-carousel-btn.next {
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .partner-carousel-caption {
+        font-size: 1rem;
+    }
+
+    .partner-carousel-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
 
 /* Footer */
 .footer {
