@@ -628,65 +628,22 @@ h2 {
     transform: scale(1.05);
     background: #f0f0f0;
 }
-
-.get-in-touch {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-}
-
-.get-in-touch h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.get-in-touch p {
+.contact-details {
+    margin-top: 1.5rem;
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
+.contact-details a {
+    color: #01581e;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.form-group {
-    margin-bottom: 1rem;
-    width: 100%;
+.contact-details a:hover {
+    text-decoration: underline;
 }
 
-.form-group label {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-.submit-button {
-    background-color: #01581e;
-    color: white;
-    border: none;
-    padding: 0.8rem 2rem;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #005521;
-}
 /* Chatbot Button */
 #chatbot-toggle {
     position: fixed;
