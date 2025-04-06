@@ -318,6 +318,47 @@
       </div>
     </section>
 
+<section class="partner-carousel">
+      <div class="partner-carousel-header">
+        <h2>🤝 In Partnership with Industry Leaders</h2>
+        <p>
+          We proudly collaborate with top firms like
+          <strong>Dikatlego Engineering</strong> to bring the best service to
+          our clients.
+        </p>
+      </div>
+
+      <div class="partner-carousel-container">
+        <div class="partner-carousel-track">
+          <!-- Single Partner Carousel Slide -->
+          <div class="partner-carousel-slide">
+            <img
+              src="dikatlego engineering.jpg"
+              alt="Dikatlego Engineering Project 1"
+            />
+            <p class="partner-carousel-caption">
+              "Working with Architectural Innovation Co. has made our project
+              timelines smoother and client satisfaction higher." – Dikatlego
+              Engineering
+            </p>
+          </div>
+          <!-- Repeat for more slides -->
+          <div class="partner-carousel-slide">
+            <img src="dke.jpg" alt="Dikatlego Engineering Project 2" />
+            <p class="partner-carousel-caption">
+              "Together, we’re delivering high-quality construction solutions,
+              faster." – Dikatlego Team
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-navigation">
+        <button class="partner-carousel-btn prev">&#10094;</button>
+        <button class="partner-carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+
     <section class="coming-soon">
       <h2>🚀 Exciting Features Coming Soon!</h2>
       <p>
@@ -385,6 +426,39 @@
         >
       </div>
     </footer>
+
+<script>
+      const trackPartner = document.querySelector(".partner-carousel-track");
+      const slidesPartner = Array.from(trackPartner.children);
+      const nextBtnPartner = document.querySelector(
+        ".partner-carousel-btn.next"
+      );
+      const prevBtnPartner = document.querySelector(
+        ".partner-carousel-btn.prev"
+      );
+      let currentIndexPartner = 0;
+
+      function updatePartnerSlide() {
+        const slideWidth = slidesPartner[0].getBoundingClientRect().width;
+        trackPartner.style.transform = `translateX(-${
+          slideWidth * currentIndexPartner
+        }px)`;
+      }
+
+      nextBtnPartner.addEventListener("click", () => {
+        currentIndexPartner = (currentIndexPartner + 1) % slidesPartner.length;
+        updatePartnerSlide();
+      });
+
+      prevBtnPartner.addEventListener("click", () => {
+        currentIndexPartner =
+          (currentIndexPartner - 1 + slidesPartner.length) %
+          slidesPartner.length;
+        updatePartnerSlide();
+      });
+
+      window.addEventListener("resize", updatePartnerSlide);
+    </script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
